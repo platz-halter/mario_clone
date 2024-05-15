@@ -17,10 +17,8 @@ func _physics_process(delta):
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -max_speed
 		$player_sprite.flip_h = false
-		
 	else:
 		velocity.x = 0	
-		
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y = -jump_power
