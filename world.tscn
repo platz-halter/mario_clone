@@ -57,6 +57,9 @@ position = Vector2(52, 50)
 [node name="grass_floor16" parent="." instance=ExtResource("3_07lin")]
 position = Vector2(34, 50)
 
+[node name="grass_floor17" parent="." instance=ExtResource("3_07lin")]
+position = Vector2(34, 50)
+
 [node name="player" parent="." instance=ExtResource("2_2jgat")]
 position = Vector2(-23, 18)
 jump_power = 65
