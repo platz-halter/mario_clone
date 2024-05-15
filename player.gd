@@ -20,12 +20,10 @@ func _physics_process(delta):
 	#if Input.is_action_just_pressed("ui_up"):
 		#velocity.y = -jump_power
 		
-	move_and_slide()
+	#move_and_slide()
 	
-	velocity.x = 0
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y = -jump_power
-	
 	move_and_slide()
  
