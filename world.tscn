@@ -15,9 +15,6 @@ position = Vector2(269, 39)
 [node name="grass_block" parent="." instance=ExtResource("2_skla1")]
 position = Vector2(-23, 39)
 
-[node name="grass_block2" parent="." instance=ExtResource("2_skla1")]
-position = Vector2(8, 48)
-
 [node name="grass_floor" parent="." instance=ExtResource("3_07lin")]
 position = Vector2(88, 62)
 
@@ -31,19 +28,19 @@ position = Vector2(124, 62)
 position = Vector2(142, 62)
 
 [node name="grass_floor6" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(163, 87)
+position = Vector2(160, 53)
 
 [node name="grass_floor7" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(181, 87)
+position = Vector2(178, 53)
 
 [node name="grass_floor8" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(199, 87)
+position = Vector2(196, 53)
 
 [node name="grass_floor9" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(217, 87)
+position = Vector2(214, 53)
 
 [node name="grass_floor10" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(235, 87)
+position = Vector2(232, 53)
 
 [node name="grass_floor11" parent="." instance=ExtResource("3_07lin")]
 position = Vector2(257, 62)
@@ -53,6 +50,15 @@ position = Vector2(274, 62)
 
 [node name="grass_floor13" parent="." instance=ExtResource("3_07lin")]
 position = Vector2(292, 62)
+
+[node name="grass_floor5" parent="." instance=ExtResource("3_07lin")]
+position = Vector2(70, 50)
+
+[node name="grass_floor15" parent="." instance=ExtResource("3_07lin")]
+position = Vector2(52, 50)
+
+[node name="grass_floor16" parent="." instance=ExtResource("3_07lin")]
+position = Vector2(34, 50)
 
 [node name="player" parent="." instance=ExtResource("2_2jgat")]
 position = Vector2(-23, 18)
