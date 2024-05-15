@@ -12,8 +12,10 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = max_speed
+		$player_sprites.flip_h = true
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -max_speed
+		$player_sprites.flip_h = false
 	else:
 		velocity.x = 0	
 	
