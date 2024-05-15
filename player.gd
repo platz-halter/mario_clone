@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var local_grav 		= 2
 @export var jump_cooldown 	= 2
 
-func _ready():
+func _ready():	
 	print("Hello world")
 func _physics_process(delta):
 	velocity.y += local_grav

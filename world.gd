@@ -6,3 +6,7 @@ func _ready():
 func _process(delta): #System UI
 	if Input.is_action_just_pressed("sys_exit"):
 		get_tree().quit()
+	print($player.position)
+
+	if $player.position.y >= 90:
+		print("YOU DIE")
