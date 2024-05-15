@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
-@export var max_speed = 50
-@export var jump_power = 50
-@export var local_grav = 2
+@export var max_speed 		= 50
+@export var jump_power 		= 50
+@export var local_grav 		= 2
+@export var jump_cooldown 	= 2
 
 func _ready():
 	print("Hello world")
