@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://obhxu384ycn5"]
+
+[ext_resource type="Texture2D" uid="uid://3vlxy1ejj3e6" path="res://Assets/Tiles/tile_0047.png" id="1_vatdy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sk2tu"]
+size = Vector2(18, 18)
+
+[node name="Block" type="StaticBody2D"]
+position = Vector2(9, 9)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vatdy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_sk2tu")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
