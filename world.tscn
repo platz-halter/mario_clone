@@ -9,9 +9,6 @@
 position = Vector2(41, 23)
 script = ExtResource("1_ui034")
 
-[node name="grass_floor14" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(269, 39)
-
 [node name="grass_block" parent="." instance=ExtResource("2_skla1")]
 position = Vector2(-23, 39)
 
