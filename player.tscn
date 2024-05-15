@@ -28,3 +28,6 @@ flip_h = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_r6ur2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_speed = 1.0
