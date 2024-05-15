@@ -59,4 +59,7 @@ position = Vector2(34, 50)
 
 [node name="player" parent="." instance=ExtResource("2_2jgat")]
 position = Vector2(-23, 18)
+max_speed = 50
 jump_power = 65
+local_grav = 2
+jump_cooldown = 2
