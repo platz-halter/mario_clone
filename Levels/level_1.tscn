@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqy1bgyeg2jo4"]
+
+[ext_resource type="PackedScene" uid="uid://obhxu384ycn5" path="res://Objects/block.tscn" id="1_ohbvd"]
+[ext_resource type="PackedScene" uid="uid://ltems63txr8h" path="res://Objects/grass_block.tscn" id="2_umh3t"]
+
+[node name="Level-1" type="Node2D"]
+
+[node name="Block" parent="." instance=ExtResource("1_ohbvd")]
+position = Vector2(25, 63)
+
+[node name="grass_block" parent="." instance=ExtResource("2_umh3t")]
+position = Vector2(50, 63)

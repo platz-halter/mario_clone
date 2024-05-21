@@ -1,65 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6arb6byxjw3v"]
+[gd_scene load_steps=4 format=3 uid="uid://b6arb6byxjw3v"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ui034"]
 [ext_resource type="PackedScene" uid="uid://breslrdu4ta07" path="res://player.tscn" id="2_2jgat"]
-[ext_resource type="PackedScene" uid="uid://ltems63txr8h" path="res://Objects/grass_block.tscn" id="2_skla1"]
-[ext_resource type="PackedScene" uid="uid://dhs7x7suf33og" path="res://Objects/grass_floor.tscn" id="3_07lin"]
+[ext_resource type="PackedScene" uid="uid://dqy1bgyeg2jo4" path="res://Levels/level_1.tscn" id="3_xf4rj"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(41, 23)
 script = ExtResource("1_ui034")
 
-[node name="grass_block" parent="." instance=ExtResource("2_skla1")]
-position = Vector2(-23, 39)
-
-[node name="grass_floor" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(88, 62)
-
-[node name="grass_floor2" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(106, 62)
-
-[node name="grass_floor3" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(124, 62)
-
-[node name="grass_floor4" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(142, 62)
-
-[node name="grass_floor6" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(160, 53)
-
-[node name="grass_floor7" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(178, 53)
-
-[node name="grass_floor8" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(196, 53)
-
-[node name="grass_floor9" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(214, 53)
-
-[node name="grass_floor10" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(232, 53)
-
-[node name="grass_floor11" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(257, 62)
-
-[node name="grass_floor12" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(274, 62)
-
-[node name="grass_floor13" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(292, 62)
-
-[node name="grass_floor5" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(70, 50)
-
-[node name="grass_floor15" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(52, 50)
-
-[node name="grass_floor16" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(34, 50)
-
-[node name="grass_floor17" parent="." instance=ExtResource("3_07lin")]
-position = Vector2(34, 50)
+[node name="Level-1" parent="." instance=ExtResource("3_xf4rj")]
+position = Vector2(-44, -25)
 
 [node name="player" parent="." instance=ExtResource("2_2jgat")]
-position = Vector2(-23, 18)
+position = Vector2(-19, 17)
 jump_power = 65
