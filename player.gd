@@ -5,15 +5,15 @@ extends CharacterBody2D
 @export var local_grav 		= 2
 @export var jump_cooldown 	= 2
 
-func _ready():	
-	print("Hello world")
+func _ready():
+	pass
+	
 func _physics_process(delta):
 	velocity.y += local_grav
 	
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = max_speed
 		$player_sprite.flip_h = true
-		
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -max_speed
 		$player_sprite.flip_h = false
