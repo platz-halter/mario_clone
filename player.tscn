@@ -19,7 +19,11 @@ size = Vector2(14, 18)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_g00eu")
+max_speed = null
 jump_power = 90
+local_grav = null
+jump_cooldown = null
+max_health = null
 
 [node name="player_sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nmb78")
