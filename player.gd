@@ -26,6 +26,13 @@ func _physics_process(delta):
 			velocity.y = -jump_power
 	move_and_slide()
  
-func get_input():
-	velocity.x = 0
-	
+const DASH_SPEED = 900
+var dashing = false
+
+if Input.is_action_just_pressed("Dash") :
+	dashing = true
+
+if dashing:
+	velocity.x = direction * DASH_SPEED
+else:
+	velocity.x = direction + SPEED
