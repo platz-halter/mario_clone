@@ -1,37 +1,33 @@
 extends CharacterBody2D
 
-@export var max_speed 		= 50
+@export var max_speed 		= 10
 @export var jump_power 		= 50
 @export var local_grav 		= 2
 @export var jump_cooldown 	= 2
 @export var max_health 		= 100
+@export var dash_max 		= 100
+
+var dash_speed
 
 func _ready():
 	var health = max_health
 	
 func _physics_process(delta):
 	velocity.y += local_grav
-	
+
 	if Input.is_action_pressed("ui_right"):
-		velocity.x = max_speed
+		velocity.x += max_speed
 		$player_sprite.flip_h = true
 	elif Input.is_action_pressed("ui_left"):
-		velocity.x = -max_speed
+		velocity.x -= max_speed
 		$player_sprite.flip_h = false
 	else:
-		velocity.x = 0	
+		velocity.x = 0
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y = -jump_power
+	dash_speed = 0
 	move_and_slide()
  
-const DASH_SPEED = 900
-var dashing = false
 
-if Input.is_action_just_pressed("Dash") :
-	dashing = true
 
-if dashing:
-	velocity.x = direction * DASH_SPEED
-else:
-	velocity.x = direction + SPEED
