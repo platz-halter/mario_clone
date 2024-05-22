@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dqy1bgyeg2jo4"]
 
 [ext_resource type="PackedScene" uid="uid://obhxu384ycn5" path="res://Objects/Blocks/block.tscn" id="1_ohbvd"]
-[ext_resource type="PackedScene" uid="uid://ltems63txr8h" path="res://Objects/Blocks/grass/grass_block.tscn" id="2_umh3t"]
+[ext_resource type="PackedScene" uid="uid://ltems63txr8h" path="res://Objects/Blocks/Grass/grass_block.tscn" id="2_umh3t"]
 
 [node name="Level-1" type="Node2D"]
 
