@@ -1,9 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqy1bgyeg2jo4"]
+[gd_scene load_steps=4 format=3 uid="uid://dqy1bgyeg2jo4"]
 
 [ext_resource type="PackedScene" uid="uid://obhxu384ycn5" path="res://Objects/Blocks/block.tscn" id="1_ohbvd"]
 [ext_resource type="PackedScene" uid="uid://ltems63txr8h" path="res://Objects/Blocks/Grass/grass_block.tscn" id="2_umh3t"]
+[ext_resource type="PackedScene" path="res://Objects/Utils/player_start.tscn" id="3_gwb31"]
 
-[node name="Level-1" type="Node2D"]
+[node name="level_1" type="Node2D"]
+
+[node name="PlayerStart" parent="." instance=ExtResource("3_gwb31")]
+position = Vector2(28, 24)
 
 [node name="Block" parent="." instance=ExtResource("1_ohbvd")]
 position = Vector2(25, 63)
