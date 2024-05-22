@@ -6,7 +6,6 @@ extends CharacterBody2D
 @export var jump_cooldown 	= 2
 @export var max_health 		= 100
 
-
 func _ready():
 	var health = max_health
 	
