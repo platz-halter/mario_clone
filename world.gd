@@ -1,7 +1,10 @@
 extends Node2D
 
+var player_coins = null
+
+
 func _ready():
-	pass
+	player_coins = 0
 
 func _process(delta): #System UI
 	if Input.is_action_just_pressed("sys_exit"):

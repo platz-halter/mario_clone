@@ -4,9 +4,11 @@ extends CharacterBody2D
 @export var jump_power 		= 50
 @export var local_grav 		= 2
 @export var jump_cooldown 	= 2
+@export var max_health 		= 100
+
 
 func _ready():
-	pass
+	var health = max_health
 	
 func _physics_process(delta):
 	velocity.y += local_grav
