@@ -3,11 +3,11 @@
 [ext_resource type="Script" path="res://world.gd" id="1_ui034"]
 [ext_resource type="PackedScene" uid="uid://breslrdu4ta07" path="res://player.tscn" id="2_2jgat"]
 
-[node name="Node2D" type="Node2D"]
+[node name="world" type="Node2D"]
 visibility_layer = 3
 position = Vector2(41, 23)
 script = ExtResource("1_ui034")
 
 [node name="player" parent="." instance=ExtResource("2_2jgat")]
-position = Vector2(25, 41)
+position = Vector2(-27, 34)
 jump_power = 65
