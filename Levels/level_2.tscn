@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfts377i5180k"]
+
+[ext_resource type="PackedScene" uid="uid://d3nmtktli0buh" path="res://Objects/Utils/player_start.tscn" id="1_it3v3"]
+[ext_resource type="PackedScene" uid="uid://dhs7x7suf33og" path="res://Objects/Blocks/Grass/grass_floor.tscn" id="2_mfqcu"]
+
+[node name="level_2" type="Node2D"]
+
+[node name="PlayerStart" parent="." instance=ExtResource("1_it3v3")]
+position = Vector2(47, 59)
+
+[node name="grass_floor" parent="." instance=ExtResource("2_mfqcu")]
+position = Vector2(47, 81)
+
+[node name="grass_floor2" parent="." instance=ExtResource("2_mfqcu")]
+position = Vector2(65, 81)
+
+[node name="grass_floor3" parent="." instance=ExtResource("2_mfqcu")]
+position = Vector2(83, 81)
+
+[node name="grass_floor4" parent="." instance=ExtResource("2_mfqcu")]
+position = Vector2(101, 81)

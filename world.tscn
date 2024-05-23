@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6arb6byxjw3v"]
+[gd_scene load_steps=4 format=3 uid="uid://b6arb6byxjw3v"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ui034"]
 [ext_resource type="PackedScene" uid="uid://breslrdu4ta07" path="res://player.tscn" id="2_2jgat"]
+[ext_resource type="PackedScene" uid="uid://dqy1bgyeg2jo4" path="res://Levels/level_1.tscn" id="3_g8l1w"]
 
-[node name="Node2D" type="Node2D"]
+[node name="world" type="Node2D"]
 visibility_layer = 3
 position = Vector2(41, 23)
 script = ExtResource("1_ui034")
 
-[node name="player" parent="." instance=ExtResource("2_2jgat")]
-position = Vector2(25, 41)
-jump_power = 65
+[node name="level_1" parent="." instance=ExtResource("3_g8l1w")]
+
+[node name="Player" parent="." instance=ExtResource("2_2jgat")]
+local_grav = 4
