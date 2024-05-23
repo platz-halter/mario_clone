@@ -10,9 +10,10 @@ extends CharacterBody2D
 
 var local_speed
 
+
+
 func _ready():
 	var health = max_health
-	 
 		
 func _physics_process(delta):
 	velocity.y += local_grav
