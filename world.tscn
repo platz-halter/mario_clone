@@ -12,14 +12,12 @@ script = ExtResource("1_ui034")
 
 [node name="Player" parent="." instance=ExtResource("2_2jgat")]
 position = Vector2(-74, 33)
-max_speed = null
 local_grav = 4
-jump_cooldown = null
-max_health = null
-dash_max = null
-dash_cooldown = null
 
 [node name="level_1" parent="." instance=ExtResource("3_g8l1w")]
 
 [node name="spikes" parent="level_1" instance=ExtResource("4_42gtw")]
-position = Vector2(80, 41)
+position = Vector2(190, 55)
+
+[connection signal="body_entered" from="level_1/spikes" to="Player" method="_on_spikes_2_body_entered"]
+[connection signal="body_entered" from="level_1/spikes" to="Player" method="_on_spikes_body_entered"]

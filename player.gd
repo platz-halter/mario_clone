@@ -1,5 +1,4 @@
 extends CharacterBody2D
-extends 
 
 @export var max_speed 		= 50
 @export var jump_power 		= 50
@@ -11,11 +10,14 @@ extends
 
 var local_speed
 var local_coins
-
+var health
 
 func _ready():
-	var health = max_health
+	health = max_health
 func _physics_process(delta):
+	if health <= 0:
+		print("Game over!")
+	
 	velocity.y += local_grav
 	
 	if Input.is_action_pressed("dash"):
@@ -36,5 +38,6 @@ func _physics_process(delta):
 			velocity.y = -jump_power
 	move_and_slide()
  
-
-
+func _on_spikes_body_entered(body):
+	print("game over") # Replace with function body.
+	

@@ -19,6 +19,8 @@ func _ready():
 	var t = get_child(0)
 	t = t.get_child(0)
 	$Player.position = t.position
+	
+	print(get_tree_string_pretty())
 func _process(delta): #System UI
 	if Input.is_action_just_pressed("sys_exit"):
 		get_tree().quit()
