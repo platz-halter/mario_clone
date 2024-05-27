@@ -7,43 +7,57 @@
 [node name="level_1" type="Node2D"]
 
 [node name="player_start" parent="." instance=ExtResource("3_gwb31")]
+unique_name_in_owner = true
 position = Vector2(27, 36)
 
 [node name="grass_floor" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(22, 57)
 
 [node name="grass_floor2" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(40, 57)
 
 [node name="grass_floor3" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(58, 57)
 
 [node name="grass_floor4" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(76, 57)
 
 [node name="grass_floor5" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(94, 57)
 
 [node name="grass_floor6" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(112, 57)
 
 [node name="grass_floor7" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(148, 71)
 
 [node name="grass_floor8" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(166, 71)
 
 [node name="grass_floor9" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(184, 71)
 
 [node name="grass_floor10" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(202, 71)
 
 [node name="grass_floor11" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(220, 71)
 
 [node name="grass_floor12" parent="." instance=ExtResource("2_80btb")]
+unique_name_in_owner = true
 position = Vector2(238, 71)
 
 [node name="spikes" parent="." instance=ExtResource("3_crkji")]
+unique_name_in_owner = true
 position = Vector2(81, 46)
