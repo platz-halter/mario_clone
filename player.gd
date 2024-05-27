@@ -1,4 +1,5 @@
 extends CharacterBody2D
+extends 
 
 @export var max_speed 		= 50
 @export var jump_power 		= 50
@@ -9,7 +10,7 @@ extends CharacterBody2D
 @export var dash_cooldown 	= 10
 
 var local_speed
-
+var local_coins
 
 
 func _ready():
