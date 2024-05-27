@@ -15,10 +15,10 @@ func _ready():
 	player_coins = 0
 	
 	move_child($Player, 1) #Make Player stay on top layer
-	
 	var t = get_child(0)
 	t = t.get_child(0)
 	$Player.position = t.position
+
 
 func _process(delta): #System UI
 	if Input.is_action_just_pressed("sys_exit"):
