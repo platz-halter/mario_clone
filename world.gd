@@ -5,8 +5,6 @@ var player_coins = null
 var level1 = preload("res://Levels/level_1.tscn")
 var level2 = preload("res://Levels/level_2.tscn")
 
-var main_char = preload("res://player.tscn")
-
 func load_level(level):
 	var inst_level = level.instantiate()
 	add_child(inst_level)

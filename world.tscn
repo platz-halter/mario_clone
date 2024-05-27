@@ -9,10 +9,8 @@ visibility_layer = 3
 position = Vector2(41, 23)
 script = ExtResource("1_ui034")
 
-[node name="level_1" parent="." instance=ExtResource("3_g8l1w")]
-unique_name_in_owner = true
-
 [node name="Player" parent="." instance=ExtResource("2_2jgat")]
-unique_name_in_owner = true
-position = Vector2(-60, 41)
+position = Vector2(-74, 33)
 local_grav = 4
+
+[node name="level_1" parent="." instance=ExtResource("3_g8l1w")]
