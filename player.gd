@@ -66,4 +66,4 @@ func _on_collision_detector_area_entered(area):
 		local_coins += 1
 		area.remove_from_group("coins") # --> Coin destroys itself
 	if area.is_in_group("portal"):
-		
+		pass
