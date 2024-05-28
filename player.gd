@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var jump_power 		= 50
 @export var local_grav 		= 2
 @export var jump_cooldown 	= 2
-@export var max_health 		= 100
+@export var max_health 		= 3
 @export var dash_max 		= 100
 @export var dash_cooldown 	= 10
 
@@ -40,8 +40,8 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y = -jump_power
 	move_and_slide()
- 
-func _on_spikes_body_entered(body):
-	health -= 1
-	print("game over") # Replace with function body.
-	
+
+func _on_collision_detector_area_entered(area):
+	if area.is_in_group("spikes"):
+		print("Seet liberty my leg")
+		health = health - 1

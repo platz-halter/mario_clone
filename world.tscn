@@ -1,23 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6arb6byxjw3v"]
+[gd_scene load_steps=4 format=3 uid="uid://b6arb6byxjw3v"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ui034"]
 [ext_resource type="PackedScene" uid="uid://breslrdu4ta07" path="res://player.tscn" id="2_2jgat"]
 [ext_resource type="PackedScene" uid="uid://dqy1bgyeg2jo4" path="res://Levels/level_1.tscn" id="3_g8l1w"]
-[ext_resource type="PackedScene" uid="uid://dxftjpgp8q6ol" path="res://Objects/LevelElements/spikes.tscn" id="4_42gtw"]
 
 [node name="world" type="Node2D"]
 visibility_layer = 3
 position = Vector2(41, 23)
 script = ExtResource("1_ui034")
 
-[node name="Player" parent="." instance=ExtResource("2_2jgat")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("2_2jgat")]
 position = Vector2(-74, 33)
 local_grav = 4
 
-[node name="level_1" parent="." instance=ExtResource("3_g8l1w")]
-
-[node name="spikes" parent="level_1" instance=ExtResource("4_42gtw")]
-position = Vector2(190, 55)
-
-[connection signal="body_entered" from="level_1/spikes" to="Player" method="_on_spikes_body_entered"]
-[connection signal="body_entered" from="level_1/spikes" to="Player" method="_on_spikes_2_body_entered"]
+[node name="level_1" parent="." groups=["levels"] instance=ExtResource("3_g8l1w")]

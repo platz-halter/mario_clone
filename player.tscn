@@ -49,3 +49,11 @@ offset_bottom = -69.0
 max_value = 5.0
 step = 1.0
 show_percentage = false
+
+[node name="collision_detector" type="Area2D" parent="."]
+
+[node name="player_hitbox" type="CollisionShape2D" parent="collision_detector"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_r6ur2")
+
+[connection signal="area_entered" from="collision_detector" to="." method="_on_collision_detector_area_entered"]

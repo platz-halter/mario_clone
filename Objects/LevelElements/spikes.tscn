@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_50vac"]
 size = Vector2(18, 9)
 
-[node name="spikes" type="Area2D"]
+[node name="spikes" type="Area2D" groups=["spikes"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
