@@ -15,13 +15,15 @@ var health
 func _ready():
 	health = max_health
 func _physics_process(delta):
+	local_speed = max_speed
+	
 	if health <= 0:
 		print("Game over!")
 	
 	velocity.y += local_grav
 	
 	if Input.is_action_pressed("dash"):
-		local_speed = max_speed + dash_max	
+		local_speed += dash_max	
 	else:
 		local_speed = max_speed
 	
