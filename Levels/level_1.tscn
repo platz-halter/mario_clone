@@ -52,7 +52,7 @@ position = Vector2(256, 71)
 position = Vector2(134, 98)
 
 [node name="spikes2" parent="." instance=ExtResource("3_ip3kg")]
-position = Vector2(208, 55)
+position = Vector2(246, 55)
 
 [node name="spikes3" parent="." instance=ExtResource("3_ip3kg")]
-position = Vector2(165, 55)
+position = Vector2(191, 55)
