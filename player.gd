@@ -12,19 +12,26 @@ var local_speed
 var local_coins
 var health
 
-func _ready():
-	health = max_health
-func _physics_process(delta):
-	local_speed = max_speed
-	$HealthLabel.text = "Health:%s" % health
+func _ready(): #Reset vars at creation
+	health 		= max_health
+	local_coins = 0
+	velocity	= Vector2(0,0)
 	
+func _physics_process(delta):
+	#Misc
+	local_speed = max_speed
+	
+	#Health system
+	$HealthLabel.text = "Health:%s" % health #Health label
 	if health <= 0:
 		print("Game over!")
-		get_tree().quit()
+		get_tree().quit() #Exit game
 	
+	#Gravity
 	velocity.y += local_grav
 	
-	if Input.is_action_pressed("dash"):
+	#Movement controller
+	if Input.is_action_pressed("dash"): #WIP
 		local_speed += dash_max	
 	else:
 		local_speed = max_speed
@@ -37,12 +44,17 @@ func _physics_process(delta):
 		$player_sprite.flip_h = false
 	else:
 		velocity.x = 0
-	if is_on_floor():
-		if Input.is_action_just_pressed("ui_up"):
+	
+	#Prevent unlimited jumping
+	if is_on_floor(): #Check if player touches floor
+		if Input.is_action_just_pressed("ui_up"): #Jumping
 			velocity.y = -jump_power
+	
+	#Execute positional change
 	move_and_slide()
 
+#Global collision detector
 func _on_collision_detector_area_entered(area):
-	if area.is_in_group("spikes"):
-		print("Seet liberty my leg")
+	if area.is_in_group("spikes"): #Detect if object is in spikes group
+		#print("DEBUG SPIKE HIT") -- DEBUG
 		health = health - 1

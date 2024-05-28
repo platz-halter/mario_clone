@@ -11,26 +11,30 @@ func get_level(): #Get currently loaded level
 	return level_node
 
 func load_level(level): #Load level and position player
-	remove_child(get_level())
-	var inst_level = level.instantiate()
+	remove_child(get_level()) #Remove previous level
+	var inst_level = level.instantiate() 
 	add_child(inst_level)
 	
 	move_child($Player, 1) #Make Player stay on top layer
-	var t = get_child(0)
-	t = t.get_child(0)
-	$Player.position = t.position
+	var start_positioner = get_child(0).get_child(0) #Get start positioner from level node
+	$Player.position = start_positioner.position 
 	
 func _ready(): #Executes on game start
 	player_bank = 0
 	
-	load_level(level1)
+	load_level(level2)
 	print(get_tree_string_pretty())
 
 func _process(delta): #System UI
 	if Input.is_action_just_pressed("sys_exit"):
-		load_level(level2)
-		#get_tree().quit()
+		get_tree().quit()
 	
+#Demo Level Changer	
+	if Input.is_action_just_pressed("sys_level1"):
+		load_level(level1)
+	if Input.is_action_just_pressed("sys_level2"):
+		load_level(level2)
 
+#Detect if player is falling down -- WIP
 	if $Player.position.y >= 90:
 		print("YOU DIE")
