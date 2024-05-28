@@ -32,3 +32,20 @@ shape = SubResource("RectangleShape2D_r6ur2")
 
 [node name="player_camera" type="Camera2D" parent="."]
 position_smoothing_speed = 1.0
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = -152.0
+offset_top = -90.0
+offset_right = -57.0
+offset_bottom = -67.0
+theme_override_colors/font_color = Color(0.989789, 0, 0.26915, 1)
+theme_override_colors/font_shadow_color = Color(0.329158, 0.329158, 0.329158, 1)
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -155.0
+offset_top = -89.0
+offset_right = -58.0
+offset_bottom = -69.0
+max_value = 5.0
+step = 1.0
+show_percentage = false
