@@ -12,13 +12,14 @@ var local_speed
 var local_coins
 var health
 var dash_cooldown
-
+var parent
 
 func _ready(): #Reset vars at creation
 	health 			= max_health
 	local_coins 	= 0
 	velocity		= Vector2(0,0)
 	dash_cooldown 	= 0
+	parent 			= get_parent()
 	
 func _physics_process(delta):
 	#Misc
@@ -67,6 +68,6 @@ func _on_collision_detector_area_entered(area):
 		local_coins += 1
 		area.remove_from_group("coins") # --> Coin destroys itself
 	if area.is_in_group("portal"):
+		parent.load_level(parent.level1)
 
-		print("change world")
 
