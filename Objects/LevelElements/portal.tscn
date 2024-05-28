@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcrsdo1274r70"]
+
+[ext_resource type="Texture2D" uid="uid://c42cw5ceq257f" path="res://Assets/Tiles/tile_0132.png" id="1_bws1k"]
+[ext_resource type="Script" path="res://Objects/LevelElements/portal.gd" id="1_fhh4m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jy8bk"]
+size = Vector2(8.5, 11.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vpcht"]
+size = Vector2(16, 1.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfmty"]
+size = Vector2(3.5, 13)
+
+[node name="Portal" type="Area2D" groups=["portal"]]
+z_index = 1
+y_sort_enabled = true
+scale = Vector2(2, 2)
+script = ExtResource("1_fhh4m")
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_bws1k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.125)
+shape = SubResource("RectangleShape2D_jy8bk")
+debug_color = Color(0.952691, 0.022303, 0.546122, 0.42)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, -6.375)
+shape = SubResource("RectangleShape2D_vpcht")
+debug_color = Color(0.88593, 0.000297256, 0.806317, 0.42)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7.25, -0.5)
+shape = SubResource("RectangleShape2D_bfmty")
+debug_color = Color(0.88593, 0.000297256, 0.806317, 0.42)

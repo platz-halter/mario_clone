@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfts377i5180k"]
+[gd_scene load_steps=6 format=3 uid="uid://bfts377i5180k"]
 
 [ext_resource type="PackedScene" uid="uid://d3nmtktli0buh" path="res://Objects/Utils/player_start.tscn" id="1_it3v3"]
+[ext_resource type="PackedScene" uid="uid://bcrsdo1274r70" path="res://Objects/LevelElements/portal.tscn" id="2_a7poy"]
 [ext_resource type="PackedScene" uid="uid://dhs7x7suf33og" path="res://Objects/Blocks/Grass/grass_floor.tscn" id="2_mfqcu"]
 [ext_resource type="PackedScene" uid="uid://bvk53vr40sxli" path="res://Objects/Blocks/dirt_block.tscn" id="3_547j3"]
 [ext_resource type="PackedScene" uid="uid://iam8m73tj80w" path="res://Objects/LevelElements/coins.tscn" id="4_ssxcn"]
@@ -9,6 +10,9 @@
 
 [node name="PlayerStart" parent="." instance=ExtResource("1_it3v3")]
 position = Vector2(47, 59)
+
+[node name="Portal" parent="." instance=ExtResource("2_a7poy")]
+position = Vector2(357, 59)
 
 [node name="grass_floor" parent="." instance=ExtResource("2_mfqcu")]
 position = Vector2(47, 81)
