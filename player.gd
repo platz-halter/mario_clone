@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
-@export var max_speed 			= 50
-@export var jump_power 			= 50
+@export var max_speed 			= 100
+@export var jump_power 			= 100
 @export var local_grav 			= 2
-@export var jump_cooldown 		= 2
+@export var jump_cooldown 		= 1
 @export var max_health 			= 3
-@export var dash_max 			= 100
+@export var dash_max 			= 150
 @export var dash_cooldown_dur 	= 10
 
 var local_speed
@@ -67,4 +67,6 @@ func _on_collision_detector_area_entered(area):
 		local_coins += 1
 		area.remove_from_group("coins") # --> Coin destroys itself
 	if area.is_in_group("portal"):
+
 		print("change world")
+
