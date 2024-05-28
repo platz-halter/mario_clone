@@ -56,5 +56,8 @@ func _physics_process(delta):
 #Global collision detector
 func _on_collision_detector_area_entered(area):
 	if area.is_in_group("spikes"): #Detect if object is in spikes group
-		#print("DEBUG SPIKE HIT") -- DEBUG
-		health = health - 1
+		health -= 1
+	if area.is_in_group("coins"): # WIP
+		local_coins += local_coins 
+		area.remove_from_group("coins") # --> Coin destroys itself
+		
