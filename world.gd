@@ -28,5 +28,3 @@ func _process(delta): #System UI
 
 	if $Player.position.y >= 90:
 		print("YOU DIE")
-	
-	
