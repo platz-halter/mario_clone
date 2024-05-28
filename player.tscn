@@ -17,7 +17,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r6ur2"]
 size = Vector2(14, 18)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_g00eu")
 jump_power = 90
 
@@ -26,9 +26,17 @@ sprite_frames = SubResource("SpriteFrames_nmb78")
 animation = &"idle"
 flip_h = true
 
+[node name="player_camera" type="Camera2D" parent="."]
+position_smoothing_speed = 1.0
+
 [node name="player_hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_r6ur2")
 
-[node name="player_camera" type="Camera2D" parent="."]
-position_smoothing_speed = 1.0
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="player_hitbox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_r6ur2")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

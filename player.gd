@@ -42,8 +42,6 @@ func _physics_process(delta):
 
 	print(get_tree().get_nodes_in_group("spikes"))
 
-func _on_spikes_body_entered(body):
-	print("game over") # Replace with function body.
-
-
-
+func _on_area_2d_area_entered(area):
+	if area.is_in_group("spikes"):
+		print("Sweet liberty my leg")
