@@ -21,8 +21,11 @@ func _physics_process(delta):
 	#Misc
 	local_speed = max_speed
 	
+	#Update Labels
+	$HealthBar/HealthLabel.text = "Health:%s" % health #Health label
+	$CoinBar/CoinLabel.text = "Coins:%s" % local_coins #Coin label
+	
 	#Health system
-	$HealthLabel.text = "Health:%s" % health #Health label
 	if health <= 0:
 		print("Game over!")
 		get_tree().quit() #Exit game
@@ -58,6 +61,6 @@ func _on_collision_detector_area_entered(area):
 	if area.is_in_group("spikes"): #Detect if object is in spikes group
 		health -= 1
 	if area.is_in_group("coins"): # WIP
-		local_coins += local_coins 
+		local_coins += 1
 		area.remove_from_group("coins") # --> Coin destroys itself
 		

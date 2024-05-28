@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfts377i5180k"]
+[gd_scene load_steps=5 format=3 uid="uid://bfts377i5180k"]
 
 [ext_resource type="PackedScene" uid="uid://d3nmtktli0buh" path="res://Objects/Utils/player_start.tscn" id="1_it3v3"]
 [ext_resource type="PackedScene" uid="uid://dhs7x7suf33og" path="res://Objects/Blocks/Grass/grass_floor.tscn" id="2_mfqcu"]
 [ext_resource type="PackedScene" uid="uid://bvk53vr40sxli" path="res://Objects/Blocks/dirt_block.tscn" id="3_547j3"]
+[ext_resource type="PackedScene" uid="uid://iam8m73tj80w" path="res://Objects/LevelElements/coins.tscn" id="4_ssxcn"]
 
 [node name="level_2" type="Node2D"]
 
@@ -125,3 +126,15 @@ position = Vector2(532, 176)
 
 [node name="grass_floor38" parent="." instance=ExtResource("2_mfqcu")]
 position = Vector2(550, 176)
+
+[node name="coin" parent="." instance=ExtResource("4_ssxcn")]
+position = Vector2(111, 66)
+
+[node name="coin2" parent="." instance=ExtResource("4_ssxcn")]
+position = Vector2(174, 51)
+
+[node name="coin3" parent="." instance=ExtResource("4_ssxcn")]
+position = Vector2(230, 37)
+
+[node name="coin4" parent="." instance=ExtResource("4_ssxcn")]
+position = Vector2(263, 22)
