@@ -13,6 +13,7 @@ var local_coins
 var health
 var dash_cooldown
 
+
 func _ready(): #Reset vars at creation
 	health 			= max_health
 	local_coins 	= 0
@@ -66,4 +67,6 @@ func _on_collision_detector_area_entered(area):
 		local_coins += 1
 		area.remove_from_group("coins") # --> Coin destroys itself
 	if area.is_in_group("portal"):
-		pass
+
+		print("change world")
+
