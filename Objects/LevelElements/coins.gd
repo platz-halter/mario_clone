@@ -9,5 +9,4 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not is_in_group("coins"):
-		print("DEL ME NOW")
-		self.queue_free()
+		self.queue_free() #Delete self
