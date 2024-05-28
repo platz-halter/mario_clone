@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://breslrdu4ta07"]
+[gd_scene load_steps=7 format=3 uid="uid://breslrdu4ta07"]
 
 [ext_resource type="Texture2D" uid="uid://d2e2hc2lf5j5k" path="res://Assets/Tiles/Characters/tile_0000.png" id="1_d3h77"]
 [ext_resource type="Script" path="res://player.gd" id="1_g00eu"]
+[ext_resource type="FontFile" uid="uid://cjwfdcobb7sk4" path="res://Fonts/fonts/connection/Connection.otf" id="3_v3j5i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nmb78"]
 animations = [{
@@ -16,6 +17,10 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r6ur2"]
 size = Vector2(14, 18)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gdspq"]
+font = ExtResource("3_v3j5i")
+font_size = 20
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_g00eu")
@@ -33,19 +38,11 @@ shape = SubResource("RectangleShape2D_r6ur2")
 [node name="player_camera" type="Camera2D" parent="."]
 position_smoothing_speed = 1.0
 
-[node name="HealthLabel" type="Label" parent="."]
-offset_left = -152.0
-offset_top = -90.0
-offset_right = -57.0
-offset_bottom = -67.0
-theme_override_colors/font_color = Color(0.989789, 0, 0.26915, 1)
-theme_override_colors/font_shadow_color = Color(0.329158, 0.329158, 0.329158, 1)
-
 [node name="HealthBar" type="ProgressBar" parent="."]
-offset_left = -155.0
-offset_top = -89.0
-offset_right = -58.0
-offset_bottom = -69.0
+offset_left = -158.0
+offset_top = -88.0
+offset_right = -94.0
+offset_bottom = -63.0
 max_value = 5.0
 step = 1.0
 show_percentage = false
@@ -55,5 +52,14 @@ show_percentage = false
 [node name="player_hitbox" type="CollisionShape2D" parent="collision_detector"]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_r6ur2")
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = -153.0
+offset_top = -81.0
+offset_right = -107.0
+offset_bottom = -58.0
+scale = Vector2(0.5, 0.5)
+text = "Test:"
+label_settings = SubResource("LabelSettings_gdspq")
 
 [connection signal="area_entered" from="collision_detector" to="." method="_on_collision_detector_area_entered"]
