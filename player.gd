@@ -16,6 +16,7 @@ func _ready():
 	health = max_health
 func _physics_process(delta):
 	local_speed = max_speed
+	$HealthLabel.text = "Health: %s" % health
 	
 	if health <= 0:
 		print("Game over!")
@@ -41,5 +42,6 @@ func _physics_process(delta):
 	move_and_slide()
  
 func _on_spikes_body_entered(body):
+	health -= 1
 	print("game over") # Replace with function body.
-
+	
