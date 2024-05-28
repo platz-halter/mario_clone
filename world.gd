@@ -4,7 +4,7 @@ extends Node2D
 var level1 = preload("res://Levels/level_1.tscn")
 var level2 = preload("res://Levels/level_2.tscn")
 
-var player_bank #Cash that the player collects before stashing it in the "lobby"
+var player_bank #WIP - Cash that the player collects before stashing it in the "lobby"
 
 func get_level(): #Get currently loaded level
 	var level_node = get_child(0)

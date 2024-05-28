@@ -32,109 +32,52 @@ position = Vector2(136, 81)
 position = Vector2(-11, 233)
 
 [node name="grass_floor7" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(154, 67)
+position = Vector2(154, 81)
 
 [node name="grass_floor8" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(172, 67)
+position = Vector2(172, 81)
 
 [node name="grass_floor9" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(189, 67)
+position = Vector2(190, 81)
 
 [node name="grass_floor10" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(207, 53)
+position = Vector2(207, 81)
 
 [node name="grass_floor11" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(225, 53)
+position = Vector2(225, 81)
 
 [node name="grass_floor12" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(243, 53)
-
-[node name="grass_floor13" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(280, 23)
+position = Vector2(243, 81)
 
 [node name="grass_floor14" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(280, 67)
-
-[node name="grass_floor15" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(262, 38)
+position = Vector2(277, 81)
 
 [node name="grass_floor16" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(317, 67)
+position = Vector2(294, 81)
 
 [node name="grass_floor17" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(335, 81)
+position = Vector2(312, 81)
 
 [node name="grass_floor18" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(353, 81)
+position = Vector2(330, 81)
 
 [node name="grass_floor19" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(371, 81)
+position = Vector2(348, 81)
 
 [node name="grass_floor20" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(389, 81)
-
-[node name="grass_floor21" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(298, 23)
-
-[node name="grass_floor22" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(316, 23)
+position = Vector2(366, 81)
 
 [node name="grass_floor23" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(262, 67)
-
-[node name="grass_floor24" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(298, 134)
-
-[node name="grass_floor25" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(316, 134)
-
-[node name="grass_floor26" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(334, 134)
-
-[node name="grass_floor27" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(352, 134)
-
-[node name="grass_floor28" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(370, 134)
-
-[node name="grass_floor29" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(388, 148)
-
-[node name="grass_floor30" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(406, 148)
-
-[node name="grass_floor31" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(424, 162)
-
-[node name="grass_floor32" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(442, 162)
-
-[node name="grass_floor33" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(460, 176)
-
-[node name="grass_floor34" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(478, 176)
-
-[node name="grass_floor35" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(496, 176)
-
-[node name="grass_floor36" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(514, 176)
-
-[node name="grass_floor37" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(532, 176)
-
-[node name="grass_floor38" parent="." instance=ExtResource("2_mfqcu")]
-position = Vector2(550, 176)
+position = Vector2(259, 81)
 
 [node name="coin" parent="." instance=ExtResource("4_ssxcn")]
 position = Vector2(111, 66)
 
 [node name="coin2" parent="." instance=ExtResource("4_ssxcn")]
-position = Vector2(174, 51)
+position = Vector2(174, 66)
 
 [node name="coin3" parent="." instance=ExtResource("4_ssxcn")]
-position = Vector2(230, 37)
+position = Vector2(225, 66)
 
 [node name="coin4" parent="." instance=ExtResource("4_ssxcn")]
-position = Vector2(263, 22)
+position = Vector2(263, 66)

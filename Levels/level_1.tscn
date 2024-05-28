@@ -45,11 +45,14 @@ position = Vector2(220, 71)
 [node name="grass_floor12" parent="." instance=ExtResource("2_80btb")]
 position = Vector2(238, 71)
 
+[node name="grass_floor13" parent="." instance=ExtResource("2_80btb")]
+position = Vector2(256, 71)
+
 [node name="spikes" parent="." instance=ExtResource("3_ip3kg")]
 position = Vector2(134, 98)
 
 [node name="spikes2" parent="." instance=ExtResource("3_ip3kg")]
-position = Vector2(195, 55)
+position = Vector2(208, 55)
 
 [node name="spikes3" parent="." instance=ExtResource("3_ip3kg")]
-position = Vector2(237, 55)
+position = Vector2(165, 55)
