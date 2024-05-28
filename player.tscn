@@ -32,3 +32,17 @@ shape = SubResource("RectangleShape2D_r6ur2")
 
 [node name="player_camera" type="Camera2D" parent="."]
 position_smoothing_speed = 1.0
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = 54.0
+offset_top = -92.0
+offset_right = 142.0
+offset_bottom = -69.0
+text = "UAOFENOp"
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = 47.0
+offset_top = -85.0
+offset_right = 153.0
+offset_bottom = -75.0
+show_percentage = false
