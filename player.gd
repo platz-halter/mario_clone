@@ -39,7 +39,11 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y = -jump_power
 	move_and_slide()
- 
+
+	print(get_tree().get_nodes_in_group("spikes"))
+
 func _on_spikes_body_entered(body):
 	print("game over") # Replace with function body.
+
+
 

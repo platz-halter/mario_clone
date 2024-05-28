@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxftjpgp8q6ol"]
+[gd_scene load_steps=4 format=3 uid="uid://dxftjpgp8q6ol"]
 
 [ext_resource type="Texture2D" uid="uid://cxkv0boq10awy" path="res://Assets/Tiles/tile_0068.png" id="1_u51xp"]
+[ext_resource type="Script" path="res://Objects/LevelElements/spikes.gd" id="1_w2dmy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_50vac"]
 size = Vector2(18, 9)
 
-[node name="spikes" type="Area2D"]
+[node name="spikes" type="Area2D" groups=["spikes"]]
+script = ExtResource("1_w2dmy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
