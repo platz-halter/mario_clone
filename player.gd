@@ -16,10 +16,11 @@ func _ready():
 	health = max_health
 func _physics_process(delta):
 	local_speed = max_speed
-	$HealthLabel.text = "Health: %s" % health
+	$HealthLabel.text = "Health:%s" % health
 	
 	if health <= 0:
 		print("Game over!")
+		get_tree().quit()
 	
 	velocity.y += local_grav
 	

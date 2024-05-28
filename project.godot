@@ -28,6 +28,7 @@ window/vsync/vsync_mode=0
 
 folder_colors={
 "res://Assets/": "red",
+"res://Fonts/": "red",
 "res://Levels/": "purple",
 "res://Objects/": "green"
 }
