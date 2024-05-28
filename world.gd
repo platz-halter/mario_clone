@@ -3,6 +3,7 @@ extends Node2D
 #Preload all needed levels 
 var level1 = preload("res://Levels/level_1.tscn")
 var level2 = preload("res://Levels/level_2.tscn")
+var level3 = preload("res://Levels/level_3.tscn")
 
 var player_bank #WIP - Cash that the player collects before stashing it in the "lobby"
 
