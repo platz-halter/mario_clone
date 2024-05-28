@@ -48,6 +48,7 @@ step = 1.0
 show_percentage = false
 
 [node name="HealthLabel" type="Label" parent="HealthBar"]
+layout_mode = 0
 offset_left = 5.0
 offset_top = 6.0
 offset_right = 51.0
@@ -66,6 +67,7 @@ step = 1.0
 show_percentage = false
 
 [node name="CoinLabel" type="Label" parent="CoinBar"]
+layout_mode = 0
 offset_left = 5.0
 offset_top = 5.0
 offset_right = 51.0
