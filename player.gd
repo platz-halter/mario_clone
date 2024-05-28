@@ -1,21 +1,23 @@
 extends CharacterBody2D
 
-@export var max_speed 		= 50
-@export var jump_power 		= 50
-@export var local_grav 		= 2
-@export var jump_cooldown 	= 2
-@export var max_health 		= 3
-@export var dash_max 		= 100
-@export var dash_cooldown 	= 10
+@export var max_speed 			= 50
+@export var jump_power 			= 50
+@export var local_grav 			= 2
+@export var jump_cooldown 		= 2
+@export var max_health 			= 3
+@export var dash_max 			= 100
+@export var dash_cooldown_dur 	= 10
 
 var local_speed
 var local_coins
 var health
+var dash_cooldown
 
 func _ready(): #Reset vars at creation
-	health 		= max_health
-	local_coins = 0
-	velocity	= Vector2(0,0)
+	health 			= max_health
+	local_coins 	= 0
+	velocity		= Vector2(0,0)
+	dash_cooldown 	= 0
 	
 func _physics_process(delta):
 	#Misc
@@ -35,7 +37,7 @@ func _physics_process(delta):
 	
 	#Movement controller
 	if Input.is_action_pressed("dash"): #WIP
-		local_speed += dash_max	
+		local_speed += dash_max
 	else:
 		local_speed = max_speed
 	
