@@ -30,7 +30,7 @@ func _process(delta): #System UI
 	if Input.is_action_just_pressed("sys_exit"):
 		load_level(level2)
 		#get_tree().quit()
-	#print($player.position) --> DEBUG
+	
 
 	if $Player.position.y >= 90:
 		print("YOU DIE")
