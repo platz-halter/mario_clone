@@ -21,9 +21,7 @@ func load_level(level): #Load level and position player
 	
 func _ready(): #Executes on game start
 	player_bank = 0
-	
 	load_level(level2)
-	print(get_tree_string_pretty())
 
 func _process(delta): #System UI
 	if Input.is_action_just_pressed("sys_exit"):

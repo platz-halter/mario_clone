@@ -5,10 +5,11 @@
 
 [node name="world" type="Node2D"]
 visibility_layer = 3
-position = Vector2(41, 23)
+position = Vector2(81.5546, 2.13681)
 script = ExtResource("1_ui034")
 
 [node name="No level" type="Node2D" parent="."]
+position = Vector2(-74, 33)
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("2_2jgat")]
 position = Vector2(-74, 33)
