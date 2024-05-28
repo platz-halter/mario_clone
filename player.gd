@@ -40,4 +40,4 @@ func _physics_process(delta):
  
 func _on_spikes_body_entered(body):
 	print("game over") # Replace with function body.
-	
+

@@ -7,7 +7,7 @@
 
 [node name="player_start" parent="." instance=ExtResource("3_gwb31")]
 unique_name_in_owner = true
-position = Vector2(27, 36)
+position = Vector2(29, 24)
 
 [node name="grass_floor" parent="." instance=ExtResource("2_80btb")]
 unique_name_in_owner = true

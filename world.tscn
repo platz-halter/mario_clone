@@ -19,5 +19,5 @@ local_grav = 4
 [node name="spikes" parent="level_1" instance=ExtResource("4_42gtw")]
 position = Vector2(190, 55)
 
-[connection signal="body_entered" from="level_1/spikes" to="Player" method="_on_spikes_2_body_entered"]
 [connection signal="body_entered" from="level_1/spikes" to="Player" method="_on_spikes_body_entered"]
+[connection signal="body_entered" from="level_1/spikes" to="Player" method="_on_spikes_2_body_entered"]
