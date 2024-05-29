@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var jump_cooldown 		= 1
 @export var max_health 			= 3
 @export var dash_max 			= 150
-@export var dash_cooldown_dur 	= 10
+@export var dash_duration 	= 10
 
 var local_speed
 var local_coins
@@ -20,6 +20,7 @@ func _ready(): #Reset vars at creation
 	velocity		= Vector2(0,0)
 	dash_cooldown 	= 0
 	parent 			= get_parent()
+	dash			= $Dash
 	
 func _physics_process(delta):
 	#Misc
@@ -71,3 +72,13 @@ func _on_collision_detector_area_entered(area):
 		parent.load_level(parent.level1)
 
 
+func _process(delta):
+	var move_direction = get_move_direction()
+	
+	if Input.is_action_just_pressed("Dash"):
+		dash.start_dash(dash_duration)
+	
+	
+	
+	
+	
