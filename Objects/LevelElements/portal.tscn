@@ -17,7 +17,7 @@ z_index = 1
 y_sort_enabled = true
 scale = Vector2(2, 2)
 script = ExtResource("1_fhh4m")
-metadata/Path = "res://Levels/level_3.tscn"
+metadata/Path = "res://Levels/level_1.tscn"
 
 [node name="sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_bws1k")
