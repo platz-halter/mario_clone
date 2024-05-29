@@ -1,3 +1,87 @@
-[gd_scene format=3 uid="uid://dnsr05iobcsfc"]
+[gd_scene load_steps=3 format=3 uid="uid://dnsr05iobcsfc"]
+
+[ext_resource type="PackedScene" uid="uid://d3nmtktli0buh" path="res://Objects/Utils/player_start.tscn" id="1_8rxfo"]
+[ext_resource type="PackedScene" uid="uid://dhs7x7suf33og" path="res://Objects/Blocks/Grass/grass_floor.tscn" id="2_60opg"]
 
 [node name="level_3" type="Node2D"]
+
+[node name="PlayerStart" parent="." instance=ExtResource("1_8rxfo")]
+position = Vector2(-87, -65)
+
+[node name="grass_floor" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-33, -36)
+
+[node name="grass_floor2" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-15, -36)
+
+[node name="grass_floor3" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(3, -36)
+
+[node name="grass_floor4" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-87, -36)
+
+[node name="grass_floor5" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-69, -36)
+
+[node name="grass_floor6" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-51, -36)
+
+[node name="grass_floor8" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-123, -36)
+
+[node name="grass_floor9" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-105, -36)
+
+[node name="grass_floor10" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-33, -36)
+
+[node name="grass_floor11" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-15, -36)
+
+[node name="grass_floor12" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(3, -36)
+
+[node name="grass_floor13" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-87, -36)
+
+[node name="grass_floor14" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-69, -36)
+
+[node name="grass_floor15" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-51, -36)
+
+[node name="grass_floor16" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-141, -36)
+
+[node name="grass_floor17" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-123, -36)
+
+[node name="grass_floor18" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(-105, -36)
+
+[node name="grass_floor19" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(110, 65)
+
+[node name="grass_floor20" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(128, 65)
+
+[node name="grass_floor21" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(146, 65)
+
+[node name="grass_floor22" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(56, 65)
+
+[node name="grass_floor23" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(74, 65)
+
+[node name="grass_floor24" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(92, 65)
+
+[node name="grass_floor25" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(2, 65)
+
+[node name="grass_floor26" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(20, 65)
+
+[node name="grass_floor27" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(38, 65)
