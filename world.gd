@@ -1,9 +1,9 @@
 extends Node2D
 
 #Preload all needed levels 
-var level1 = preload("res://Levels/level_1.tscn")
-var level2 = preload("res://Levels/level_2.tscn")
-var level3 = preload("res://Levels/level_3.tscn")
+var level1 = "res://Levels/level_1.tscn"
+var level2 = "res://Levels/level_2.tscn"
+var level3 = "res://Levels/level_3.tscn"
 
 var player_bank #WIP - Cash that the player collects before stashing it in the "lobby"
 
@@ -13,6 +13,7 @@ func get_level(): #Get currently loaded level
 
 func load_level(level): #Load level and position player
 	remove_child(get_level()) #Remove previous level
+	level = load(level)
 	var inst_level = level.instantiate() 
 	add_child(inst_level)
 	
