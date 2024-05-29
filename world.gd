@@ -33,6 +33,8 @@ func _process(delta): #System UI
 		load_level(level1)
 	if Input.is_action_just_pressed("sys_level2"):
 		load_level(level2)
+	if Input.is_action_just_pressed("sys_level3"):
+		load_level(level3)
 
 #Detect if player is falling down -- WIP
 	if $Player.position.y >= 90:
