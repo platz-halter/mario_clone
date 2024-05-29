@@ -38,6 +38,18 @@ shape = SubResource("RectangleShape2D_r6ur2")
 [node name="player_camera" type="Camera2D" parent="."]
 position_smoothing_speed = 1.0
 
+[node name="collision_detector" type="Area2D" parent="."]
+
+[node name="player_hitbox" type="CollisionShape2D" parent="collision_detector"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_r6ur2")
+
+[node name="dash_duration" type="Timer" parent="."]
+
+[node name="dash_cooldown" type="Timer" parent="."]
+wait_time = 10.13
+one_shot = true
+
 [node name="HealthBar" type="ProgressBar" parent="."]
 offset_left = -158.0
 offset_top = -87.0
@@ -75,11 +87,5 @@ offset_bottom = 28.0
 scale = Vector2(0.5, 0.5)
 text = "Test: Coins"
 label_settings = SubResource("LabelSettings_gdspq")
-
-[node name="collision_detector" type="Area2D" parent="."]
-
-[node name="player_hitbox" type="CollisionShape2D" parent="collision_detector"]
-position = Vector2(0, 3)
-shape = SubResource("RectangleShape2D_r6ur2")
 
 [connection signal="area_entered" from="collision_detector" to="." method="_on_collision_detector_area_entered"]

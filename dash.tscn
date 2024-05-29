@@ -1,5 +1,6 @@
-[gd_scene format=3 uid="uid://drby643tge80l"]
+[gd_scene format=3 uid="uid://bhwhyk18gsgp"]
 
 [node name="Dash" type="Node2D"]
 
-[node name="duration timer" type="Timer" parent="."]
+[node name="duration_timer" type="Timer" parent="."]
+one_shot = true

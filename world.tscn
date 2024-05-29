@@ -13,9 +13,4 @@ position = Vector2(-74, 33)
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("2_2jgat")]
 position = Vector2(-74, 33)
-max_speed = null
 local_grav = 4
-jump_cooldown = null
-max_health = null
-dash_max = null
-dash_duration = null

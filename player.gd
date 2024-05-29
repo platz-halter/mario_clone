@@ -20,8 +20,7 @@ func _ready(): #Reset vars at creation
 	velocity		= Vector2(0,0)
 	dash_cooldown 	= 0
 	parent 			= get_parent()
-	dash			= $Dash
-	
+
 func _physics_process(delta):
 	#Misc
 	local_speed = max_speed
@@ -37,13 +36,14 @@ func _physics_process(delta):
 	
 	#Gravity
 	velocity.y += local_grav
+	print($dash_timer.time_left)
 	
 	#Movement controller
 	if Input.is_action_pressed("dash"): #WIP
-		local_speed += dash_max
+		pass
 	else:
 		local_speed = max_speed
-	
+			
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = local_speed
 		$player_sprite.flip_h = true
@@ -70,15 +70,3 @@ func _on_collision_detector_area_entered(area):
 		area.remove_from_group("coins") # --> Coin destroys itself
 	if area.is_in_group("portal"):
 		parent.load_level(parent.level1)
-
-
-func _process(delta):
-	var move_direction = get_move_direction()
-	
-	if Input.is_action_just_pressed("Dash"):
-		dash.start_dash(dash_duration)
-	
-	
-	
-	
-	
