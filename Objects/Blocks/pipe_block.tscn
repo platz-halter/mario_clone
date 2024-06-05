@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://x8y8fq148wle" path="res://Assets/Tiles/tile_0095.png" id="1_0vkq7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r7dt5"]
-size = Vector2(14, 16)
+size = Vector2(12, 16)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 

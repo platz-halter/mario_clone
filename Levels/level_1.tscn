@@ -10,6 +10,9 @@
 [node name="player_start" parent="." instance=ExtResource("3_gwb31")]
 position = Vector2(93, 29)
 
+[node name="StaticBody2D" parent="." instance=ExtResource("4_570ud")]
+position = Vector2(279, 55)
+
 [node name="grass_floor3" parent="." instance=ExtResource("2_80btb")]
 position = Vector2(134, 114)
 
@@ -66,6 +69,3 @@ position = Vector2(246, 55)
 
 [node name="spikes3" parent="." instance=ExtResource("3_ip3kg")]
 position = Vector2(191, 55)
-
-[node name="StaticBody2D" parent="." instance=ExtResource("4_570ud")]
-position = Vector2(279, 55)
