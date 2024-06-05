@@ -32,7 +32,10 @@ func _physics_process(delta):
 	#Health system
 	if health <= 0:
 		print("Game over!")
-		get_tree().quit() #Exit game
+		position = parent.get_child(0).get_child(0).position
+		health = max_health
+		
+		#get_tree().quit() #Exit game
 	
 	#Gravity
 	velocity.y += local_grav
