@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://cxkv0boq10awy" path="res://Assets/Tiles/tile_0068.png" id="1_u51xp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_50vac"]
-size = Vector2(18, 9)
+size = Vector2(16, 7)
 
 [node name="spikes" type="Area2D" groups=["spikes"]]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
-shape = SubResource("RectangleShape2D_50vac")
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_u51xp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5.5)
+shape = SubResource("RectangleShape2D_50vac")
