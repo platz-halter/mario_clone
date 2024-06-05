@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dnsr05iobcsfc"]
+[gd_scene load_steps=5 format=3 uid="uid://dnsr05iobcsfc"]
 
 [ext_resource type="PackedScene" uid="uid://d3nmtktli0buh" path="res://Objects/Utils/player_start.tscn" id="1_8rxfo"]
 [ext_resource type="PackedScene" uid="uid://dhs7x7suf33og" path="res://Objects/Blocks/Grass/grass_floor.tscn" id="2_60opg"]
+[ext_resource type="PackedScene" uid="uid://dxftjpgp8q6ol" path="res://Objects/LevelElements/spikes.tscn" id="3_fglhl"]
+[ext_resource type="PackedScene" uid="uid://bcrsdo1274r70" path="res://Objects/LevelElements/portal.tscn" id="4_gxy6s"]
 
 [node name="level_3" type="Node2D"]
 
@@ -60,28 +62,50 @@ position = Vector2(-123, -36)
 position = Vector2(-105, -36)
 
 [node name="grass_floor19" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(110, 65)
+position = Vector2(120, -4)
 
 [node name="grass_floor20" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(128, 65)
+position = Vector2(138, -4)
 
 [node name="grass_floor21" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(146, 65)
+position = Vector2(156, -4)
+
+[node name="grass_floor28" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(209, -16)
+
+[node name="grass_floor29" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(227, -16)
+
+[node name="grass_floor30" parent="." instance=ExtResource("2_60opg")]
+position = Vector2(245, -16)
 
 [node name="grass_floor22" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(56, 65)
+position = Vector2(66, -4)
 
 [node name="grass_floor23" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(74, 65)
+position = Vector2(84, -4)
 
 [node name="grass_floor24" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(92, 65)
+position = Vector2(102, -4)
 
 [node name="grass_floor25" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(2, 65)
+position = Vector2(12, -4)
 
 [node name="grass_floor26" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(20, 65)
+position = Vector2(30, -4)
 
 [node name="grass_floor27" parent="." instance=ExtResource("2_60opg")]
-position = Vector2(38, 65)
+position = Vector2(48, -4)
+
+[node name="spikes" parent="." instance=ExtResource("3_fglhl")]
+position = Vector2(84, -21)
+
+[node name="spikes3" parent="." instance=ExtResource("3_fglhl")]
+position = Vector2(-18, -52)
+
+[node name="spikes2" parent="." instance=ExtResource("3_fglhl")]
+position = Vector2(135, -20)
+
+[node name="Portal" parent="." instance=ExtResource("4_gxy6s")]
+position = Vector2(236, -35)
+metadata/Path = "res://Levels/level_2.tscn"
