@@ -12,5 +12,6 @@ script = ExtResource("1_ui034")
 position = Vector2(-74, 33)
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("2_2jgat")]
+unique_name_in_owner = true
 position = Vector2(-74, 33)
 local_grav = 4

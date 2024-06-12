@@ -7,6 +7,7 @@ var level3 = "res://Levels/level_3.tscn"
 
 var player_bank #WIP - Cash that the player collects before stashing it in the "lobby"
 
+
 func get_level(): #Get currently loaded level
 	var level_node = get_child(0)
 	return level_node
